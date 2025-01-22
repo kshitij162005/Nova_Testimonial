@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #6200ea;
+    --secondary-color: #bb86fc;
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --input-background: #1e1e1e;
+    --input-border: #333333;
+    --button-color: #6200ea;
+    --button-text-color: #ffffff;
+    --highlight-color: #ffeb3b;
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.space-image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.space-details {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 3rem;
+    background-color: var(--input-background);
+    border-radius: 15px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: justify; /* Ensure consistent text alignment */
+}
+
+.space-details:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.8);
+}
+
+.space-details h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--highlight-color);
+    text-align: center;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.space-details p {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+    text-align: center; /* Align text consistently */
+}
+
+.space-details h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.space-details .feedback-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feedback-card {
+    background-color: var(--background-color);
+    border: 1px solid var(--input-border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feedback-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.feedback-card h4 {
+    font-size: 1.4rem;
+    color: var(--highlight-color);
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center; /* Center align text */
+}
+
+.feedback-card p {
+    font-size: 1.2rem; /* Increase font size for better readability */
+    color: var(--text-color);
+    margin: 0.6rem 0;
+    line-height: 1.7;
+    text-align: justify; /* Justify text within feedback cards */
+}
+
+.feedback-card .response {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--input-border);
+}
+
+.feedback-card .response strong {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.space-details ul {
+    padding-left: 20px; /* Add padding to the list for better alignment */
+    margin-bottom: 2rem;
+}
+
+.space-details ul li {
+    font-size: 1.3rem; /* Increase font size for questions */
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
